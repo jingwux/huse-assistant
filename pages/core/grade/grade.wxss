@@ -1,0 +1,30 @@
+/* pages/grade/grade.wxss */
+.cont{
+  width: 100%;
+}
+.cont .list{
+  width: 99.99%;
+  display: flex;
+  flex-direction: row;
+  margin-top: -1px;
+}
+.item{
+  font-size: 14px;
+}
+.box{
+  width: 55.99%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 5px 0;
+  margin-left: -1px;
+  display: table-cell;
+  vertical-align: middle;
+  /* margin-top: -1px; */
+
+}
+.class{
+  width: 30%;
+}
+.grade{
+  width: 14%;
+}

@@ -1,0 +1,13 @@
+<view class='cont'>
+  <view class='list'>
+    <view class='box class'>课程类别</view>
+    <view class='box'>课程名称</view>
+    <view class='box grade'>成绩</view>
+  </view>
+  <view class='list' wx:for="{{grade}}" wx:key="key">   
+    <text class='box class item '>{{item.kclb}}</text>
+    <text class='box item'>{{item.kcmc}}</text>
+    <text class='box grade item'>{{item.cj}}</text>
+  </view> 
+  
+</view>

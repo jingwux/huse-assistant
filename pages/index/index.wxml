@@ -1,0 +1,50 @@
+
+  <swiper autoplay='{{true}}' interval='5000' duration='1500' indicator-dots='true'>
+    <block wx:for="{{imgUrls}}"  wx:key="key"> 
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="350" height="150"/>
+    </swiper-item>
+    </block>
+  </swiper>
+  <view class="options">
+
+    <block wx:for="{{optionUrls}}" wx:key="key">
+      <view class='option-item' bindtap='{{item.tap}}'>
+        <image src='{{item.url}}' ></image>
+        <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  
+  <view class='demo'>
+    <block wx:for="{{toggles}}" wx:key="id">
+        <scroll-view>
+          <view class='top' bindtap='toggle' id='{{item.id}}'>
+            <text>Title</text>
+          </view>
+          <view class='bottom' hidden='{{item.val}}'>
+
+          sadsadasdasd
+          </view>
+      </scroll-view>
+    </block>
+  </view>
+
+  
+
+
+<view class="weui-panel">
+    <view class="weui-panel__hd">科院短讯</view>
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+            <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+            <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道阿斯顿撒大所大所大所大所大所大所大所。</view>
+            <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">文字来源</view>
+                <view class="weui-media-box__info__meta">时间</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+            </view>
+        </view>
+    </view>
+</view>

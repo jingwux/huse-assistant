@@ -1,0 +1,72 @@
+<view class='container'>
+  <!-- 背景图片 -->
+  <image src='http://yun.huse.cn/cloud/img/bj.jpg'  mode='widthFix' class='bg'/>
+  <view class='login'>
+
+    <image src='http://yun.huse.cn/cloud/img/load-logo.png' mode='widthFix' class='cloud'/>
+    <image src='http://yun.huse.cn/cloud/img/download.png' mode='widthFix' class='title'/>
+  
+
+    <view class='username'>
+      <image src='http://www.mcy520.cn/huse/ico/user.png' mode='widthFix' class='log'/> 
+      <input type='text' placeholder='请输入学号' placeholder-class='plh' type='number' 
+      value='{{username}}' bindblur='hiddenClear1' bindfocus='showClear1' bindinput='userNameInput'></input>
+      <!-- 清除  -->
+      <icon type='clear' size='20' color='snow' hidden="{{clear1}}" bindtap='clearUsername'></icon>   
+    </view>
+
+    <view class='password'>
+      <image src='http://www.mcy520.cn/huse/ico/pwd.png' mode='widthFix' class='log1' /> 
+      <input password="{{true}}" placeholder='请输入密码' placeholder-class='plh' 
+      value='{{password}}' bindblur='hiddenClear2' bindfocus='showClear2'  bindinput='passWdInput'></input>
+      <icon type='clear' size='20' color='snow' hidden="{{clear2}}" class='icon1' 
+      bindtap='clearPassword'></icon>   
+    </view> 
+
+     <view class='login-qita'>
+        <checkbox-group bindchange="checkboxChange">
+        <checkbox value="savepwd" checked="true">记住密码</checkbox>
+        </checkbox-group>
+    <!--   <navigator url="http://mcy520.cn">忘记密码</navigator> -->
+        <view class="login-help" bindtap="showHelp">
+                <text>帮助</text>
+                <image class="login-help-img" src="../images/help.png"></image>
+        </view>
+    </view>
+
+    <button bindtap='btnLogin'>登  录</button>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+            <!-- <view class="weui-footer__links">
+                <navigator url="http://mcy520.cn" class="weui-footer__link">湖南科技学院</navigator>
+            </view> -->
+            <view class="weui-footer__text">Copyright © 2018 AnxiangLemon&XYQ</view>
+        </view>
+
+
+  </view>     
+
+
+     <view class="help" id="help" wx:if="{{help_status}}" bindtap="tapHelp">
+        <view class="box">
+          <view class="box-hd">
+            <text class="box-title">帮助</text>
+            <image class="box-close" src="../images/close.png" bindtap="hideHelp"></image>
+          </view>
+          <view class="box-bd">
+            <view class="help-q">1、帐号和密码是什么？</view>
+            <view class="help-a">
+              <text>帐号：学号（校园一卡通卡号）</text>
+              <text>密码：初始密码或者已更改密码</text>
+              <text>其中初始密码与个人身份证号码相关，采用以下规则：①身份证号码：取最后6位作为密码；②身份证号码最后一位是x的默认大写；③无居民身份证的人员（如国外留学生等），密码与统一认证码相同。</text>
+            </view>
+            <view class="help-q">2、忘记密码？</view>
+            <view class="help-a">
+              <text>请访问统一身份认证平台（http://www.huse.cn）进行忘记密码操作。</text>
+            </view>
+          </view>
+        </view>
+    </view>
+
+</view>
+

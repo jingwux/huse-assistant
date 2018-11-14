@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/index/index",
+        "pages/finds/find",
+        "pages/user/user",
+        "pages/core/grade/grade",
+        "pages/core/course/course",
+        "pages/core/book/book",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ff8f00",
+        "navigationBarTextStyle": "snow",
+        "navigationBarTitleText": "数字校园"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "selectedColor": "#FFA500",
+                "iconPath": "pages/images/tabBar/shouye.png",
+                "selectedIconPath": "pages/images/tabBar/shouyeD.png"
+            },
+            {
+                "pagePath": "pages/finds/find",
+                "text": "发现",
+                "iconPath": "pages/images/tabBar/服务.png",
+                "selectedIconPath": "pages/images/tabBar/服务D.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "个人中心",
+                "iconPath": "pages/images/tabBar/个人中心.png",
+                "selectedIconPath": "pages/images/tabBar/个人中心D.png"
+            }
+        ]
+    }
+}

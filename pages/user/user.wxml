@@ -1,0 +1,29 @@
+<view class='container'>
+  <view class='bg'>
+    <image src='http://www.mcy520.cn/huse/img/personal.png' mode='widthFix'></image>
+  </view>
+  <view class='head'>
+    <image src='http://yun.huse.cn/cloud/img/logo-user_04.jpg'></image>
+    <view class='sno' >{{workNumber}}</view>
+  </view>
+  <view class="inform">
+    松一625!哎呀嘛！哇咔咔！！！
+  </view>
+  
+  <view class='user'>
+
+    <view class="user-item" wx:for="{{info}}" wx:key="key" >
+      <image src='{{item.url}}'></image>
+      <view class='title-item'>{{item.title}}：</view>
+      <view class='info-item'>{{item.value}} </view>
+    </view>
+
+  </view>
+  
+  <view class='bottom'>
+    <view  class='note' >关于我们</view>
+  </view>
+
+  <button class='logBtn' bindtap='huseQuit'>安全退出</button>
+
+</view>
